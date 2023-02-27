@@ -102,6 +102,9 @@ body header .content .header-text .texts ul a {
   font-size: 16px;
   line-height: 24px;
 }
+body header .content .header-text .texts ul li {
+  cursor: pointer;
+}
 body header .content .header-text .texts ul li:nth-of-type(1) {
   display: flex;
   justify-content: center;
@@ -110,6 +113,12 @@ body header .content .header-text .texts ul li:nth-of-type(1) {
   background: #0AA9F4;
   border-radius: 50px;
 }
+body header .content .header-text .texts ul li:nth-of-type(1):hover {
+  background: #ffffff;
+}
+body header .content .header-text .texts ul li:nth-of-type(1):hover a {
+  color: #0AA9F4;
+}
 body header .content .header-text .texts ul li:nth-of-type(2) {
   display: flex;
   justify-content: center;
@@ -117,6 +126,12 @@ body header .content .header-text .texts ul li:nth-of-type(2) {
   padding: 10px 20px;
   border: 1px solid #ffffff;
   border-radius: 50px;
+}
+body header .content .header-text .texts ul li:nth-of-type(2):hover {
+  background: #ffffff;
+}
+body header .content .header-text .texts ul li:nth-of-type(2):hover a {
+  color: #0AA9F4;
 }
 body main {
   display: flex;
@@ -146,4 +161,55 @@ body main .what p {
   line-height: 30px;
   color: #000000;
   text-align: center;
+}
+body main .what .we-do {
+  padding: 0 30px;
+}
+body main .entertain {
+  background-color: #EEE1FF;
+  width: 100%;
+  height: 359.29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+body main .entertain div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .entertain div .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
+}
+body main .entertain div .texts h3 {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+body main .entertain div .texts p {
+  color: #272727;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+body main .entertain div .texts a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  background-color: #0AA9F4;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+body main .entertain div .texts a:hover {
+  color: #0AA9F4;
+  background: #ffffff;
 }/*# sourceMappingURL=style.css.map */
