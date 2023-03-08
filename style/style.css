@@ -727,6 +727,7 @@ body main .footer .content {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  border-bottom: 1px solid #4C4D8B;
 }
 body main .footer .content div {
   display: flex;

@@ -422,6 +422,7 @@ body{
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
+        border-bottom: 1px solid #4C4D8B;
         
         div{
           display: flex;
@@ -521,7 +522,7 @@ body{
             line-height: 160%;
             text-align: justify;
           }
-          
+
           input{
             display: flex;
             flex-direction: row;
