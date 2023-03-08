@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -52,29 +53,12 @@ body{
           width: 58%;
 
           a{
-            font-family: map-get($font, bod);
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            text-transform: capitalize;
+            @include link();
           }
 
           #log{
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: center;
-            // align-items: center;
-            // padding: 10px 20px;
-            // // width: 101px;
-            // // height: 44px;
-            // border: 1.5px solid #ffffff;
-            // border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 20px;
+            @include link();
             border: 1.5px solid #ffffff;
-            border-radius: 50px;
 
             &:hover{
               background: #ffffff;
@@ -137,15 +121,11 @@ body{
             li{
               cursor: pointer;
               &:nth-of-type(1){
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px 20px;
+               @include link();
                 // width: 144px;
                 // height: 48px;
                 background: #0AA9F4;
                 // border: 1px solid white;
-                border-radius: 50px;
 
                 &:hover{
                   background: #ffffff;
@@ -157,12 +137,8 @@ body{
               }
 
               &:nth-of-type(2){
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px 20px;
+                @include link();
                 border: 1px solid #ffffff;
-                border-radius: 50px;
 
                 &:hover{
                   background: #ffffff;
@@ -188,6 +164,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    section{
+      margin: 30px 20px;
+    }
 
     .what{
       font-family: map-get($font, bod );
@@ -266,20 +246,309 @@ body{
           }
 
           a{
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 27px;
+            @include link();
             background-color: map-get($colors, sub2);
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
 
             &:hover{
               color: map-get($colors, sub2);
               background:#ffffff;
             }
+          }
+        }
+      }
+    }
+
+    .events{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+      align-items: center;
+      // border: 1px solid red;
+      // padding: 20px 30px;
+
+      .upcoming{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        h3{
+          text-transform: capitalize;
+          font-family: map-get($font , tit);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 60px;
+          color: map-get($map: $colors, $key: upcom);
+        }
+
+        ul{
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+
+          width: 50%;
+
+          li{
+            width: 150px;
+            height: 55.16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            background-color: map-get($map: $colors
+            , $key: label);
+            border-radius: 50px;
+
+            label{
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              width: 100%;
+              text-transform: capitalize;
+              font-family: map-get($font , bod );
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 21px;
+              color: map-get($colors, dropp );
+              // padding: 10px;
+
+              select{
+                border: none;
+                background: none;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      #events{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 15px 0;
+
+        .holder{
+          @include holder();
+          // gap: 20px;
+
+          .booze{
+            @include events();
+
+            .image{
+              background-image: url(../images/drunk.png);
+            }
+          }
+
+          .concert{
+            @include events();
+
+            .image{
+              background-image: url(../images/concert.png);
+            }
+          }
+
+          .concert2{
+            @include events();
+
+            .image{
+              background-image: url(../images/icons/imager.png);
+            }
+          }
+        }
+
+        .holder2{
+          @include holder();
+
+          .champagne{
+            @include events();
+
+            .image{
+              background-image: url(../images/image\ 22.png);
+            }
+          }
+
+          .concert3{
+            @include events();
+
+            .image{
+              background-image: url(../images/image\ 23-1.png);
+            }
+          }
+
+          .ready{
+            @include events();
+
+            .image{
+              background-image: url(../images/Screenshot\ \(153\)\ 1.png);
+            }
+          }
+        }
+      }
+
+      a{
+        @include link();
+        color: map-get($colors , link );   
+        border: 1.5px solid map-get($colors , link );
+
+        &:hover{
+          background:  map-get($colors , link );
+          color: #ffffff;
+          border: 1.5px solid #ffffff;
+        }
+      }
+    }
+
+    .footer{
+      width: 100%;
+      // height: 428.88px;
+      background: map-get($colors, main );
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: map-get($colors, end);
+      gap: 20px;
+      padding: 15px;
+
+      .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        
+        div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          height: 100%;
+          // border: 1px solid red;
+          text-align: center;
+
+
+          h4{
+            font-family: map-get($font, tit );
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: capitalize;
+          }
+
+          ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            
+
+
+            li{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              a{
+                font-family: map-get($font , bod );
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 200%;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+
+        .socials{
+          align-items: flex-start;
+          gap: 20px;
+          .image{
+            width: 156px;
+            height: 42.55px;
+            background: url(../images/icons/Screenshot\ \(153\)\ 2.png) no-repeat;
+          }
+
+          p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: justify;
+            width: 393px;
+            height: 65.83px;
+          }
+
+          ul{
+            flex-direction: row;
+
+            li{
+              flex-direction: row;
+              height: 35.906494140625px;
+              width: 40.64515686035156px;
+            }
+          }
+        }
+
+        .info{
+          // height: 223px;
+          padding: 65px 0 0;
+          // ul{
+          //   height: 196px;
+          // }
+        }
+
+        .stay{
+          position: relative;
+          // text-align: left;
+
+          p{
+            width: 408.71px;
+            height: 43.89px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: justify;
+          }
+          
+          input{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 5px 15px 20px;
+            gap: 73px;
+            width: 384px;
+            height: 60px;
+            border: 1px solid #C9C9C9;
+            border-radius: 50px;
+
+            &::placeholder{
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 20px;
+              color: #A4A4A4;
+            }
+          }
+
+          button{
+            width: 120px;
+            height: 44px;
+            border: none;
+            border-radius: 50px;
+            background: map-get($colors, sub2);
           }
         }
       }

@@ -1,2 +1,29 @@
-$colors: (main:#01063D, sub: #003573, sub2:#0AA9F4, texter:#ffffff, end:#F3F3F3, evTex:#6A6A6A, upcom: #242565, drop: #1D275F, enter: #272727, tain: #EEE1FF);
-$font: (bod:('Poppins', sans-serif), tit: ('Sofia Sans Semi Condensed', sans-serif));
+$colors: (main:#01063D, sub: #003573, sub2:#0AA9F4, texter:#ffffff, end:#F3F3F3, evTex:#6A6A6A, upcom: #242565, dropp: #1D275F, enter: #272727, tain: #EEE1FF, label: #f2f4ff, events:#3D37F1, link:#242565);
+$font: (bod:('Poppins', sans-serif), tit: ('Sofia Sans Semi Condensed', sans-serif), events:('DM Sans', sans-serif));
+
+$flexStyles: (
+  "col": (
+    display: flex,
+    flex-direction: column,
+    align-items: center,
+  ),
+
+  "col-cen": (
+    display: flex,
+    flex-direction: column,
+    align-items: center,
+    justify-content: center
+  ),
+
+  "eve": (
+    display: flex,
+    align-items: center,
+    justify-content: space-evenly
+  ),
+
+  "row-cen": (
+    display: flex,
+    align-items: center,
+    justify-content: center
+  ),
+)
