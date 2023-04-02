@@ -1,23 +1,11 @@
-const flexStyles = [
-  {
-    display: flex,
-    flexDirection: column,
-    alignItems: center,
-  },
-  {
-    display: flex,
-    flexDirection: column,
-    alignItems: center,
-    justifyContent: center
-  },
-  {
-    display: flex,
-    alignItems: center,
-    justifyContent: space-evenly
-  },
-  {
-    display: flex,
-    alignItems: center,
-    justifyContent: center
-  }
-]
+let searchIcon, searchBar;
+searchIcon = document.getElementById("search-icon");
+searchBar = document.querySelector(".search-bar");
+
+// searchIcon.addEventListener("click", function() {
+//   searchBar.style.display = (searchBar.style.display === "none") ? "block" : "none";
+// });
+
+searchIcon.addEventListener("click", function(){
+  searchBar.classList.toggle("visible");
+});

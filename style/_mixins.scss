@@ -76,12 +76,23 @@
   font-family: map-get($font, bod);
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  // justify-content: center;
+  // align-items: center;
+  // padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+}
+
+@mixin visi(){
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
 }

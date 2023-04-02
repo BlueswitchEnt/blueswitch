@@ -14,6 +14,7 @@ body a {
   color: #fff;
 }
 body header {
+  position: relative;
   background-image: url(../images/image\ 21.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +24,7 @@ body header {
 body header .content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 720px;
   background: linear-gradient(107.42deg, #01063D 20.54%, #003573 58.92%);
@@ -46,28 +48,55 @@ body header .content .navbar ul a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   display: flex;
-  justify-content: center;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0;
+}
+body header .content .navbar ul .search {
+  display: flex;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  justify-content: center;
+  gap: 8px;
+}
+body header .content .navbar ul .search img {
+  cursor: pointer;
+}
+body header .content .navbar ul .search .search-bar {
+  display: none;
+}
+body header .content .navbar ul .search .search-bar.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+body header .content .navbar ul .search .search-bar.visible input {
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+}
+body header .content .navbar ul .search .search-bar.visible button {
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
 }
 body header .content .navbar ul #log {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  text-transform: capitalize;
-  text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  padding: 10px 40px;
+  gap: 10px;
   border: 1.5px solid #ffffff;
+  border-radius: 10px;
 }
 body header .content .navbar ul #log:hover {
   background: #ffffff;
@@ -79,35 +108,33 @@ body header .content .header-text {
   justify-content: space-evenly;
   font-family: "Poppins", sans-serif;
   color: #ffffff;
-}
-body header .content .header-text img {
-  width: 595px;
-  height: 818px;
+  padding: 150px 0;
 }
 body header .content .header-text .texts {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 443px;
   gap: 13px;
 }
 body header .content .header-text .texts h1 {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
+  width: 721px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
 }
 body header .content .header-text .texts p {
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  text-align: left;
+  text-align: center;
 }
 body header .content .header-text .texts ul {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  gap: 40px;
 }
 body header .content .header-text .texts ul a {
   font-weight: 600;
@@ -121,14 +148,16 @@ body header .content .header-text .texts ul li:nth-of-type(1) {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
   background: #0AA9F4;
 }
 body header .content .header-text .texts ul li:nth-of-type(1):hover {
@@ -141,14 +170,16 @@ body header .content .header-text .texts ul li:nth-of-type(2) {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
   border: 1px solid #ffffff;
 }
 body header .content .header-text .texts ul li:nth-of-type(2):hover {
@@ -156,6 +187,63 @@ body header .content .header-text .texts ul li:nth-of-type(2):hover {
 }
 body header .content .header-text .texts ul li:nth-of-type(2):hover a {
   color: #0AA9F4;
+}
+body header .content .floater {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1152px;
+  height: 150px;
+  top: 650px;
+  background: #FFFFFF;
+  box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.25);
+}
+body header .content .floater ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+body header .content .floater ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-right: 1px solid black;
+  padding: 15px;
+}
+body header .content .floater ul li p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}
+body header .content .floater ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  background: #0AA9F4;
+}
+body header .content .floater ul li a:hover {
+  background: #ffffff;
+  color: #0AA9F4;
+}
+body header .content .floater ul li:last-of-type {
+  border-right: none;
 }
 body main {
   display: flex;
@@ -229,14 +317,16 @@ body main .entertain div .texts a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
   background-color: #0AA9F4;
 }
 body main .entertain div .texts a:hover {
@@ -694,14 +784,16 @@ body main .events a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-transform: capitalize;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 50px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
   color: #242565;
   border: 1.5px solid #242565;
 }
