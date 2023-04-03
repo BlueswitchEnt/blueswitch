@@ -46,14 +46,9 @@ body header .content .navbar ul {
 }
 body header .content .navbar ul a {
   font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-  font-size: 20px;
-=======
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
->>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -152,14 +147,9 @@ body header .content .header-text .texts ul li {
 }
 body header .content .header-text .texts ul li:nth-of-type(1) {
   font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-  font-size: 20px;
-=======
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
->>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -180,14 +170,9 @@ body header .content .header-text .texts ul li:nth-of-type(1):hover a {
 }
 body header .content .header-text .texts ul li:nth-of-type(2) {
   font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-  font-size: 20px;
-=======
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
->>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -242,14 +227,9 @@ body header .content .floater ul li p {
 }
 body header .content .floater ul li a {
   font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-  font-size: 20px;
-=======
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
->>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -281,27 +261,6 @@ body main section {
 body main .what {
   font-family: "Poppins", sans-serif;
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 360px;
-}
-body main .what h2 {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
-  text-align: center;
-  color: #242565;
-  text-align: center;
-}
-body main .what p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #000000;
-  text-align: center;
-=======
   align-items: center;
   justify-content: center;
   height: 862px;
@@ -474,7 +433,6 @@ body main .what .we-do .holder .fun p {
   font-size: 15px;
   line-height: 22px;
   text-align: left;
->>>>>>> 520874e (network section)
 }
 body main .what .we-do {
   padding: 0 30px;
@@ -514,14 +472,9 @@ body main .entertain div .texts p {
 }
 body main .entertain div .texts a {
   font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-  font-size: 20px;
-=======
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
->>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -987,14 +940,9 @@ body main .events #events .holder2 .ready .image {
 }
 body main .events a {
   font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-  font-weight: 600;
-  font-size: 20px;
-=======
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
->>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
