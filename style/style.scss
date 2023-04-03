@@ -272,6 +272,7 @@ body{
     .what{
       font-family: map-get($font, bod );
       display: flex;
+<<<<<<< HEAD
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -299,6 +300,96 @@ body{
         color: #000000;
         text-align: center;
       }
+=======
+      // flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // margin: 20px;
+      height: 862px;
+      // border: 1px solid red;
+
+      .we-do{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .why{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 10px;
+          margin: 20px;
+
+          h2{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 45px;
+            // text-align: justify;
+            color: map-get($colors , upcom );
+            // text-align: center;
+          }
+
+          hr{
+            width: 349px;
+            color: map-get($colors , liner);
+          }
+
+          p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            color: #000000;
+            text-align: justify;
+          }
+
+          a{
+            @include link();
+            background: map-get($colors , sub2 );
+
+            &:hover{
+              background: map-get($colors , upcom );
+              // border: 2px solid #000000;
+              // color: #003573;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .holder{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          
+
+          .net-hold{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            .network{
+              @include netFun();
+            }
+
+            .learn{
+              @include netFun();
+            }
+          }
+
+          .fun{
+            @include netFun();
+          }
+        }
+      }
+
+      
+
+      
+>>>>>>> 520874e (network section)
 
       .we-do{
         padding: 0 30px;

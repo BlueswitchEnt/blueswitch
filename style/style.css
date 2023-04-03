@@ -46,8 +46,14 @@ body header .content .navbar ul {
 }
 body header .content .navbar ul a {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 20px;
+=======
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+>>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -146,8 +152,14 @@ body header .content .header-text .texts ul li {
 }
 body header .content .header-text .texts ul li:nth-of-type(1) {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 20px;
+=======
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+>>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -168,8 +180,14 @@ body header .content .header-text .texts ul li:nth-of-type(1):hover a {
 }
 body header .content .header-text .texts ul li:nth-of-type(2) {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 20px;
+=======
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+>>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -224,8 +242,14 @@ body header .content .floater ul li p {
 }
 body header .content .floater ul li a {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 20px;
+=======
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+>>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -257,6 +281,7 @@ body main section {
 body main .what {
   font-family: "Poppins", sans-serif;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -276,6 +301,180 @@ body main .what p {
   line-height: 30px;
   color: #000000;
   text-align: center;
+=======
+  align-items: center;
+  justify-content: center;
+  height: 862px;
+}
+body main .what .we-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body main .what .we-do .why {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+body main .what .we-do .why h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #242565;
+}
+body main .what .we-do .why hr {
+  width: 349px;
+  color: #003573;
+}
+body main .what .we-do .why p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  text-align: justify;
+}
+body main .what .we-do .why a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  background: #0AA9F4;
+}
+body main .what .we-do .why a:hover {
+  background: #242565;
+  color: #ffffff;
+}
+body main .what .we-do .holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .what .we-do .holder .net-hold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+body main .what .we-do .holder .net-hold .network {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  margin: 12px;
+  width: 301px;
+  height: 245px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body main .what .we-do .holder .net-hold .network h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #003573;
+}
+body main .what .we-do .holder .net-hold .network hr {
+  width: 229px;
+  color: #003573;
+}
+body main .what .we-do .holder .net-hold .network p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: left;
+}
+body main .what .we-do .holder .net-hold .learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  margin: 12px;
+  width: 301px;
+  height: 245px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body main .what .we-do .holder .net-hold .learn h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #003573;
+}
+body main .what .we-do .holder .net-hold .learn hr {
+  width: 229px;
+  color: #003573;
+}
+body main .what .we-do .holder .net-hold .learn p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: left;
+}
+body main .what .we-do .holder .fun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  margin: 12px;
+  width: 301px;
+  height: 245px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body main .what .we-do .holder .fun h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #003573;
+}
+body main .what .we-do .holder .fun hr {
+  width: 229px;
+  color: #003573;
+}
+body main .what .we-do .holder .fun p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: left;
+>>>>>>> 520874e (network section)
 }
 body main .what .we-do {
   padding: 0 30px;
@@ -315,8 +514,14 @@ body main .entertain div .texts p {
 }
 body main .entertain div .texts a {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 20px;
+=======
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+>>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
@@ -782,8 +987,14 @@ body main .events #events .holder2 .ready .image {
 }
 body main .events a {
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 20px;
+=======
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+>>>>>>> 520874e (network section)
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
