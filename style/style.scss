@@ -357,17 +357,15 @@ body{
         }
       }
 
-      
-
-      
-
       .we-do{
         padding: 0 30px;
       }
     }
 
     .entertain{
-      background-color: map-get($colors , tain);
+      background:url(../images/image\ 22.png);
+      background-size: cover;
+      background-repeat: no-repeat;
       width: 100%;
       height: 359.29px;
       display: flex;
@@ -380,6 +378,11 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        background: linear-gradient(107.42deg, #01063D 20.54%, #003573 58.92%);
+        mix-blend-mode: normal;
+        opacity: 0.93;
+        width: 100%;
+        height: 100%;
 
         // img{
         //   position: absolute;
@@ -392,33 +395,39 @@ body{
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
           gap: 25px;
           // border: 1px solid red;git add .
           padding: 10px;
 
           h3{
           font-family: map-get($font , tit);
-          font-weight: 700;
-          font-size: 34px;
-          line-height: 51px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 27px;
+          text-align: center;
+          text-transform: uppercase;
+          color: map-get($map: $colors, $key: sub2);
           }
 
           p{
-            color: map-get($map: $colors, $key: enter);
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 27px;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            text-align: center;
+            width: 697.75px;
           }
 
-          a{
-            @include link();
-            background-color: map-get($colors, sub2);
+          // a{
+          //   @include link();
+          //   background-color: map-get($colors, sub2);
 
-            &:hover{
-              color: map-get($colors, sub2);
-              background:#ffffff;
-            }
-          }
+          //   &:hover{
+          //     color: map-get($colors, sub2);
+          //     background:#ffffff;
+          //   }
+          // }
         }
       }
     }
@@ -506,23 +515,23 @@ body{
             @include events();
 
             .image{
-              background-image: url(../images/drunk.png);
+              background-image: url(../images/booze.png);
             }
           }
 
-          .concert{
+          .read{
             @include events();
 
             .image{
-              background-image: url(../images/concert.png);
+              background-image: url(../images/image\ 26.png);
             }
           }
 
-          .concert2{
+          .lagos{
             @include events();
 
             .image{
-              background-image: url(../images/icons/imager.png);
+              background-image: url(../images/image\ 31.png);
             }
           }
         }
@@ -530,7 +539,7 @@ body{
         .holder2{
           @include holder();
 
-          .champagne{
+          .tech{
             @include events();
 
             .image{
@@ -538,7 +547,7 @@ body{
             }
           }
 
-          .concert3{
+          .concert{
             @include events();
 
             .image{
@@ -565,6 +574,212 @@ body{
           background:  map-get($colors , link );
           color: #ffffff;
           border: 1.5px solid #ffffff;
+        }
+      }
+    }
+
+    .ticket{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: map-get($colors , ticket );
+      width: 100%;
+      height: 526px;
+      font-family: map-get($font , bod );
+      font-style: normal;
+      
+      #holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h3{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        text-align: center;
+        margin: 15px;
+        color: map-get($colors , tick );
+        font-weight: 600;
+      }
+      
+
+      .holder{
+        @include holder();
+        justify-content: center;
+        gap: 15px;
+        padding: 0 30px;
+        
+        .image{
+          width: 942px;
+          height: 284px;
+          background: url(../images/image\ 25.png);
+        }
+
+        .texts{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          text-align: center;
+
+          h4{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+          }
+
+          h2{
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 72px;
+            color: map-get($colors , booze );
+          }
+
+          p{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+          }
+
+          a{
+            @include link();
+            background: map-get($colors , sub2 );
+
+            &:hover{
+              background: #ffffff;
+              // border: 2px solid #000000;
+              // color: #003573;
+              color: map-get($colors , sub2 );
+            }
+          }
+        }
+      }
+    }
+
+    .features{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: map-get($font , bod );
+      font-style: normal;
+      // padding: 30px;
+
+      #holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        h2{
+          font-family: map-get($font , tit );
+          color: map-get($colors , upcom );
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 54px;
+          text-transform: capitalize;
+        }
+
+        .holder{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+          // padding: 30px;
+
+          li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 420px;
+            height: 700px - 221px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            // padding: 15px;
+
+            
+            
+            .image{
+              width: 420px;
+              height: 416.81px;
+              background: url(../images/Rectangle\ 124.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 10px 10px 0px 0px;
+            }
+
+            &:nth-of-type(2){
+              .image{
+                background: url(../images/Rectangle\ 125.png);
+              }
+            }
+
+            .texts{
+              display: flex;
+              flex-direction: column;
+              align-items: left;
+              justify-content: center;
+              font-family: map-get($font , monty);
+              font-style: normal;
+              gap: 15px;
+              padding: 15px;
+
+              h3{
+                font-family: map-get($font , tit );
+                color: map-get($colors , dav );
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                text-transform: uppercase;
+              }
+
+              p{
+                color: map-get($colors , feat );
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                // text-transform: capitalize;
+              }
+
+              span{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: map-get($colors , feat );
+              }
+
+              a{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: map-get($colors , dav );
+
+                hr{
+                  width: 87.88px; 
+                }
+              }
+            }
+          }
+        }
+
+        #log{
+          @include link();
+          background: #ffffff;
+          border: 1px solid #003573;
+          color: map-get($colors , dav);
+
+          &:hover{
+            background: map-get($colors , dav );
+            // border: 2px solid #000000;
+            // color: #003573;
+            color: map-get($colors , texter );
+          }
         }
       }
     }
@@ -613,6 +828,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100%;
             
 

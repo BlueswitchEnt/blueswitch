@@ -438,7 +438,9 @@ body main .what .we-do {
   padding: 0 30px;
 }
 body main .entertain {
-  background-color: #EEE1FF;
+  background: url(../images/image\ 22.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 359.29px;
   display: flex;
@@ -450,46 +452,36 @@ body main .entertain div {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(107.42deg, #01063D 20.54%, #003573 58.92%);
+  mix-blend-mode: normal;
+  opacity: 0.93;
+  width: 100%;
+  height: 100%;
 }
 body main .entertain div .texts {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 25px;
   padding: 10px;
 }
 body main .entertain div .texts h3 {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 51px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0AA9F4;
 }
 body main .entertain div .texts p {
-  color: #272727;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-}
-body main .entertain div .texts a {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
   text-align: center;
-  display: flex;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 49px;
-  gap: 10px;
-  background-color: #0AA9F4;
-}
-body main .entertain div .texts a:hover {
-  color: #0AA9F4;
-  background: #ffffff;
+  width: 697.75px;
 }
 body main .events {
   display: flex;
@@ -567,6 +559,7 @@ body main .events #events .holder .booze {
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.9px;
+  margin: 15px;
 }
 body main .events #events .holder .booze .image {
   height: 230px;
@@ -577,11 +570,12 @@ body main .events #events .holder .booze .image {
   border-top-left-radius: 18.9px;
 }
 body main .events #events .holder .booze .item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -603,14 +597,18 @@ body main .events #events .holder .booze .item h2 span {
   line-height: 17px;
   text-transform: capitalize;
 }
-body main .events #events .holder .booze .item h3 {
+body main .events #events .holder .booze .item div {
+  display: flex;
+  flex-direction: column;
+}
+body main .events #events .holder .booze .item div h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 150%;
 }
-body main .events #events .holder .booze .item p {
+body main .events #events .holder .booze .item div p {
   grid-column: 2/3;
   grid-row: 2/2;
   font-family: "DM Sans", sans-serif;
@@ -620,17 +618,18 @@ body main .events #events .holder .booze .item p {
   color: #6A6A6A;
 }
 body main .events #events .holder .booze .image {
-  background-image: url(../images/drunk.png);
+  background-image: url(../images/booze.png);
 }
-body main .events #events .holder .concert {
+body main .events #events .holder .read {
   width: 350px;
   height: 420px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.9px;
+  margin: 15px;
 }
-body main .events #events .holder .concert .image {
+body main .events #events .holder .read .image {
   height: 230px;
   width: 100%;
   background-size: cover;
@@ -638,17 +637,18 @@ body main .events #events .holder .concert .image {
   border-top-right-radius: 18.9px;
   border-top-left-radius: 18.9px;
 }
-body main .events #events .holder .concert .item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+body main .events #events .holder .read .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-body main .events #events .holder .concert .item h2 {
+body main .events #events .holder .read .item h2 {
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
@@ -659,20 +659,24 @@ body main .events #events .holder .concert .item h2 {
   line-height: 43px;
   gap: 10px;
 }
-body main .events #events .holder .concert .item h2 span {
+body main .events #events .holder .read .item h2 span {
   color: #3D37F1;
   font-size: 20px;
   line-height: 17px;
   text-transform: capitalize;
 }
-body main .events #events .holder .concert .item h3 {
+body main .events #events .holder .read .item div {
+  display: flex;
+  flex-direction: column;
+}
+body main .events #events .holder .read .item div h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 150%;
 }
-body main .events #events .holder .concert .item p {
+body main .events #events .holder .read .item div p {
   grid-column: 2/3;
   grid-row: 2/2;
   font-family: "DM Sans", sans-serif;
@@ -681,18 +685,19 @@ body main .events #events .holder .concert .item p {
   line-height: 150%;
   color: #6A6A6A;
 }
-body main .events #events .holder .concert .image {
-  background-image: url(../images/concert.png);
+body main .events #events .holder .read .image {
+  background-image: url(../images/image\ 26.png);
 }
-body main .events #events .holder .concert2 {
+body main .events #events .holder .lagos {
   width: 350px;
   height: 420px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.9px;
+  margin: 15px;
 }
-body main .events #events .holder .concert2 .image {
+body main .events #events .holder .lagos .image {
   height: 230px;
   width: 100%;
   background-size: cover;
@@ -700,17 +705,18 @@ body main .events #events .holder .concert2 .image {
   border-top-right-radius: 18.9px;
   border-top-left-radius: 18.9px;
 }
-body main .events #events .holder .concert2 .item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+body main .events #events .holder .lagos .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-body main .events #events .holder .concert2 .item h2 {
+body main .events #events .holder .lagos .item h2 {
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
@@ -721,20 +727,24 @@ body main .events #events .holder .concert2 .item h2 {
   line-height: 43px;
   gap: 10px;
 }
-body main .events #events .holder .concert2 .item h2 span {
+body main .events #events .holder .lagos .item h2 span {
   color: #3D37F1;
   font-size: 20px;
   line-height: 17px;
   text-transform: capitalize;
 }
-body main .events #events .holder .concert2 .item h3 {
+body main .events #events .holder .lagos .item div {
+  display: flex;
+  flex-direction: column;
+}
+body main .events #events .holder .lagos .item div h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 150%;
 }
-body main .events #events .holder .concert2 .item p {
+body main .events #events .holder .lagos .item div p {
   grid-column: 2/3;
   grid-row: 2/2;
   font-family: "DM Sans", sans-serif;
@@ -743,8 +753,8 @@ body main .events #events .holder .concert2 .item p {
   line-height: 150%;
   color: #6A6A6A;
 }
-body main .events #events .holder .concert2 .image {
-  background-image: url(../images/icons/imager.png);
+body main .events #events .holder .lagos .image {
+  background-image: url(../images/image\ 31.png);
 }
 body main .events #events .holder2 {
   display: flex;
@@ -752,15 +762,16 @@ body main .events #events .holder2 {
   justify-content: space-evenly;
   width: 100%;
 }
-body main .events #events .holder2 .champagne {
+body main .events #events .holder2 .tech {
   width: 350px;
   height: 420px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.9px;
+  margin: 15px;
 }
-body main .events #events .holder2 .champagne .image {
+body main .events #events .holder2 .tech .image {
   height: 230px;
   width: 100%;
   background-size: cover;
@@ -768,17 +779,18 @@ body main .events #events .holder2 .champagne .image {
   border-top-right-radius: 18.9px;
   border-top-left-radius: 18.9px;
 }
-body main .events #events .holder2 .champagne .item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+body main .events #events .holder2 .tech .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-body main .events #events .holder2 .champagne .item h2 {
+body main .events #events .holder2 .tech .item h2 {
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
@@ -789,20 +801,24 @@ body main .events #events .holder2 .champagne .item h2 {
   line-height: 43px;
   gap: 10px;
 }
-body main .events #events .holder2 .champagne .item h2 span {
+body main .events #events .holder2 .tech .item h2 span {
   color: #3D37F1;
   font-size: 20px;
   line-height: 17px;
   text-transform: capitalize;
 }
-body main .events #events .holder2 .champagne .item h3 {
+body main .events #events .holder2 .tech .item div {
+  display: flex;
+  flex-direction: column;
+}
+body main .events #events .holder2 .tech .item div h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 150%;
 }
-body main .events #events .holder2 .champagne .item p {
+body main .events #events .holder2 .tech .item div p {
   grid-column: 2/3;
   grid-row: 2/2;
   font-family: "DM Sans", sans-serif;
@@ -811,18 +827,19 @@ body main .events #events .holder2 .champagne .item p {
   line-height: 150%;
   color: #6A6A6A;
 }
-body main .events #events .holder2 .champagne .image {
+body main .events #events .holder2 .tech .image {
   background-image: url(../images/image\ 22.png);
 }
-body main .events #events .holder2 .concert3 {
+body main .events #events .holder2 .concert {
   width: 350px;
   height: 420px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.9px;
+  margin: 15px;
 }
-body main .events #events .holder2 .concert3 .image {
+body main .events #events .holder2 .concert .image {
   height: 230px;
   width: 100%;
   background-size: cover;
@@ -830,17 +847,18 @@ body main .events #events .holder2 .concert3 .image {
   border-top-right-radius: 18.9px;
   border-top-left-radius: 18.9px;
 }
-body main .events #events .holder2 .concert3 .item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+body main .events #events .holder2 .concert .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-body main .events #events .holder2 .concert3 .item h2 {
+body main .events #events .holder2 .concert .item h2 {
   grid-column: 1/2;
   grid-row: 1/2;
   display: flex;
@@ -851,20 +869,24 @@ body main .events #events .holder2 .concert3 .item h2 {
   line-height: 43px;
   gap: 10px;
 }
-body main .events #events .holder2 .concert3 .item h2 span {
+body main .events #events .holder2 .concert .item h2 span {
   color: #3D37F1;
   font-size: 20px;
   line-height: 17px;
   text-transform: capitalize;
 }
-body main .events #events .holder2 .concert3 .item h3 {
+body main .events #events .holder2 .concert .item div {
+  display: flex;
+  flex-direction: column;
+}
+body main .events #events .holder2 .concert .item div h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 150%;
 }
-body main .events #events .holder2 .concert3 .item p {
+body main .events #events .holder2 .concert .item div p {
   grid-column: 2/3;
   grid-row: 2/2;
   font-family: "DM Sans", sans-serif;
@@ -873,7 +895,7 @@ body main .events #events .holder2 .concert3 .item p {
   line-height: 150%;
   color: #6A6A6A;
 }
-body main .events #events .holder2 .concert3 .image {
+body main .events #events .holder2 .concert .image {
   background-image: url(../images/image\ 23-1.png);
 }
 body main .events #events .holder2 .ready {
@@ -883,6 +905,7 @@ body main .events #events .holder2 .ready {
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.9px;
+  margin: 15px;
 }
 body main .events #events .holder2 .ready .image {
   height: 230px;
@@ -893,11 +916,12 @@ body main .events #events .holder2 .ready .image {
   border-top-left-radius: 18.9px;
 }
 body main .events #events .holder2 .ready .item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -919,14 +943,18 @@ body main .events #events .holder2 .ready .item h2 span {
   line-height: 17px;
   text-transform: capitalize;
 }
-body main .events #events .holder2 .ready .item h3 {
+body main .events #events .holder2 .ready .item div {
+  display: flex;
+  flex-direction: column;
+}
+body main .events #events .holder2 .ready .item div h3 {
   grid-column: 2/3;
   grid-row: 1/2;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 150%;
 }
-body main .events #events .holder2 .ready .item p {
+body main .events #events .holder2 .ready .item div p {
   grid-column: 2/3;
   grid-row: 2/2;
   font-family: "DM Sans", sans-serif;
@@ -960,6 +988,203 @@ body main .events a:hover {
   background: #242565;
   color: #ffffff;
   border: 1.5px solid #ffffff;
+}
+body main .ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #DEEDF3;
+  width: 100%;
+  height: 526px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body main .ticket #holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .ticket h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  margin: 15px;
+  color: #242565;
+  font-weight: 600;
+}
+body main .ticket .holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 30px;
+}
+body main .ticket .holder .image {
+  width: 942px;
+  height: 284px;
+  background: url(../images/image\ 25.png);
+}
+body main .ticket .holder .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+body main .ticket .holder .texts h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+body main .ticket .holder .texts h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  color: #01063D;
+}
+body main .ticket .holder .texts p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+body main .ticket .holder .texts a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  background: #0AA9F4;
+}
+body main .ticket .holder .texts a:hover {
+  background: #ffffff;
+  color: #0AA9F4;
+}
+body main .features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body main .features #holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body main .features #holder h2 {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  color: #242565;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+body main .features #holder .holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+body main .features #holder .holder li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 420px;
+  height: 479px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+body main .features #holder .holder li .image {
+  width: 420px;
+  height: 416.81px;
+  background: url(../images/Rectangle\ 124.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+body main .features #holder .holder li:nth-of-type(2) .image {
+  background: url(../images/Rectangle\ 125.png);
+}
+body main .features #holder .holder li .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  gap: 15px;
+  padding: 15px;
+}
+body main .features #holder .holder li .texts h3 {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  color: #003573;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+body main .features #holder .holder li .texts p {
+  color: #424242;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+body main .features #holder .holder li .texts span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #424242;
+}
+body main .features #holder .holder li .texts a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #003573;
+}
+body main .features #holder .holder li .texts a hr {
+  width: 87.88px;
+}
+body main .features #holder #log {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #003573;
+  color: #003573;
+}
+body main .features #holder #log:hover {
+  background: #003573;
+  color: #ffffff;
 }
 body main .footer {
   width: 100%;
@@ -1001,6 +1226,7 @@ body main .footer .content div ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
 }
 body main .footer .content div ul li {
