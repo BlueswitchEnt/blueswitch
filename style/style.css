@@ -90,6 +90,7 @@ body header .content .navbar ul .search .search-bar.visible button {
   border: none;
   border-radius: 15px;
   padding: 8px;
+  cursor: pointer;
 }
 body header .content .navbar ul #log {
   justify-content: center;
@@ -249,11 +250,19 @@ body header .content .floater ul li a:hover {
 body header .content .floater ul li:last-of-type {
   border-right: none;
 }
+body header.feat {
+  height: 112px;
+  background-image: none;
+}
+body header.feat .content {
+  height: 112px;
+}
 body main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 body main section {
   margin: 30px 20px;
@@ -1107,14 +1116,14 @@ body main .features #holder .holder li {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 420px;
+  width: 400px;
   height: 479px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 body main .features #holder .holder li .image {
-  width: 420px;
+  width: 400px;
   height: 416.81px;
   background: url(../images/Rectangle\ 124.png);
   background-repeat: no-repeat;
@@ -1318,4 +1327,26 @@ body main .footer .content .stay button {
   border: none;
   border-radius: 50px;
   background: #0AA9F4;
+}
+body main.feat-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+body main.feat-main .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+body main.feat-main .top hr {
+  width: 400px;
+}
+body main.feat-main .top h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #242565;
 }/*# sourceMappingURL=style.css.map */
