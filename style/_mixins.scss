@@ -152,3 +152,58 @@
 
   @include why();
 }
+
+@mixin topper(){
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+
+    hr{
+      width: 400px;
+      // border: 1px solid #003573;
+    }
+
+    h1{
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 40px;
+      text-transform: capitalize;
+      color: map-get($colors , upcom );
+    }
+  }
+
+  .lister{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+
+    ul{
+      display: flex;
+      align-items: left;
+      justify-content: space-between;
+      width: 80%;
+      
+      li{
+        display: flex;
+        a{
+          font-family: map-get($font , mont );
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: map-get($colors , feat );
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+}
+
+@mixin footer(){
+  padding: 0;
+}

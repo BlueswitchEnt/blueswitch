@@ -42,7 +42,7 @@ body header .content .navbar ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 58%;
+  width: 65%;
 }
 body header .content .navbar ul a {
   font-family: "Poppins", sans-serif;
@@ -1333,20 +1333,350 @@ body main.feat-main {
   flex-direction: column;
   width: 100%;
   padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  padding: 0;
 }
 body main.feat-main .top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 10px;
+  width: 100%;
 }
 body main.feat-main .top hr {
   width: 400px;
 }
 body main.feat-main .top h1 {
   font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 40px;
   text-transform: capitalize;
   color: #242565;
+}
+body main.feat-main .lister {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0;
+}
+body main.feat-main .lister ul {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  width: 80%;
+}
+body main.feat-main .lister ul li {
+  display: flex;
+}
+body main.feat-main .lister ul li a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #424242;
+  text-transform: capitalize;
+}
+body main.feat-main .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body main.feat-main .features .holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+body main.feat-main .features .holder li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 479px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+body main.feat-main .features .holder li .image {
+  width: 400px;
+  height: 416.81px;
+  background: url(../images/Rectangle\ 124.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+body main.feat-main .features .holder li:nth-of-type(2) .image {
+  background: url(../images/Rectangle\ 125.png);
+}
+body main.feat-main .features .holder li .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  gap: 15px;
+  padding: 15px;
+}
+body main.feat-main .features .holder li .texts h3 {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  color: #003573;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+body main.feat-main .features .holder li .texts p {
+  color: #424242;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+body main.feat-main .features .holder li .texts span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #424242;
+}
+body main.feat-main .features .holder li .texts a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #003573;
+}
+body main.feat-main .features .holder li .texts a hr {
+  width: 87.88px;
+}
+body main.feat-main .features #log {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  display: flex;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #003573;
+  color: #003573;
+}
+body main.feat-main .features #log:hover {
+  background: #003573;
+  color: #ffffff;
+}
+body main.eve-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  gap: 40px;
+  padding: 0;
+}
+body main.eve-main .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+body main.eve-main .top hr {
+  width: 400px;
+}
+body main.eve-main .top h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #242565;
+}
+body main.eve-main .lister {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  margin: 15px 0;
+}
+body main.eve-main .lister ul {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  width: 80%;
+}
+body main.eve-main .lister ul li {
+  display: flex;
+}
+body main.eve-main .lister ul li a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #424242;
+  text-transform: capitalize;
+}
+body main.eve-main .art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+body main.eve-main .art .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  gap: 8px;
+}
+body main.eve-main .art .texts h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  margin-left: 13px;
+}
+body main.eve-main .art .texts div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 8px;
+}
+body main.eve-main .art .texts div a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 49px;
+  gap: 10px;
+  background: #0AA9F4;
+  border-radius: 50px;
+  width: 161px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+body main.eve-main .art .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #242565;
+  width: 680px;
+  height: 607px;
+  border-radius: 50%;
+  padding: 50px;
+}
+body main.eve-main .art .image div {
+  width: 524px;
+  height: 489px;
+  background: rgba(10, 169, 244, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main.eve-main .create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/image\ 22.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 362px;
+}
+body main.eve-main .create .update {
+  background: linear-gradient(107.42deg, #01063D 20.54%, #003573 58.92%);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body main.eve-main .create .update h2 {
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+body main.eve-main .create .update div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+body main.eve-main .create .update div p {
+  width: 607px;
+  height: 56.26px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+body main.eve-main .create .update div .stay {
+  position: relative;
+}
+body main.eve-main .create .update div .stay p {
+  width: 408.71px;
+  height: 43.89px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: justify;
+}
+body main.eve-main .create .update div .stay input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 5px 15px 20px;
+  gap: 73px;
+  width: 384px;
+  height: 60px;
+  border: 1px solid #C9C9C9;
+  border-radius: 50px;
+}
+body main.eve-main .create .update div .stay input::-moz-placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #A4A4A4;
+}
+body main.eve-main .create .update div .stay input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #A4A4A4;
+}
+body main.eve-main .create .update div .stay button {
+  position: absolute;
+  width: 120px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  background: #0AA9F4;
+  right: 5%;
 }/*# sourceMappingURL=style.css.map */

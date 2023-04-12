@@ -51,7 +51,7 @@ body{
           display: flex;
           align-items: center;
           justify-content: space-evenly;
-          width: 58%;
+          width: 65%;
 
           a{
             @include link();
@@ -949,26 +949,310 @@ body{
       flex-direction: column;
       width: 100%;
       padding: 20px;
+      font-family: map-get($font , bod );
+      font-style: normal;
 
-      .top{
+      @include topper();
+
+      .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .holder{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+          // padding: 30px;
+
+          li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 400px;
+            height: 700px - 221px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            // padding: 15px;
+
+            
+            
+            .image{
+              width: 400px;
+              height: 416.81px;
+              background: url(../images/Rectangle\ 124.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              border-radius: 10px 10px 0px 0px;
+            }
+
+            &:nth-of-type(2){
+              .image{
+                background: url(../images/Rectangle\ 125.png);
+              }
+            }
+
+            .texts{
+              display: flex;
+              flex-direction: column;
+              align-items: left;
+              justify-content: center;
+              font-family: map-get($font , monty);
+              font-style: normal;
+              gap: 15px;
+              padding: 15px;
+
+              h3{
+                font-family: map-get($font , tit );
+                color: map-get($colors , dav );
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                text-transform: uppercase;
+              }
+
+              p{
+                color: map-get($colors , feat );
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                // text-transform: capitalize;
+              }
+
+              span{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: map-get($colors , feat );
+              }
+
+              a{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: map-get($colors , dav );
+
+                hr{
+                  width: 87.88px; 
+                }
+              }
+            }
+          }
+        }
+
+        #log{
+          @include link();
+          background: #ffffff;
+          border: 1px solid #003573;
+          color: map-get($colors , dav);
+
+          &:hover{
+            background: map-get($colors , dav );
+            // border: 2px solid #000000;
+            // color: #003573;
+            color: map-get($colors , texter );
+          }
+        }
+      }
+
+      @include footer();
+    }
+
+    &.eve-main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      font-family: map-get($font , bod );
+      font-style: normal;
+      gap: 40px;
+
+      @include topper();
+
+      .art{
+        // position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 18px;
+        gap: 50px;
+        // width: 861px;
 
-        hr{
-          width: 400px;
-          // border: 1px solid #003573;
+        .texts{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: map-get($font , bod );
+          font-style: normal;
+          gap: 8px;
+          // margin-right: 50px;
+
+
+          h2{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            margin-left: 13px;
+          }
+
+          div{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            gap: 8px;
+
+
+            a{
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              padding: 12px 49px;
+              gap: 10px;
+              background: map-get($colors, sub2);
+              border-radius: 50px;
+              width: 161px;
+
+              font-family: map-get($font, bod);
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              text-transform: uppercase;
+            }
+          }
         }
 
-        h1{
-          font-weight: 600;
-          font-size: 40px;
-          line-height: 60px;
-          text-transform: capitalize;
-          color: map-get($colors , upcom );
+        .image{
+          // position: absolute;
+          // left: 550px;
+          // top: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: map-get($colors , link);
+          width: 680px;
+          height: 607px;
+          border-radius: 50%;
+          padding: 50px;
+
+          div{
+            width: 524px;
+            height: 489px;
+            background: rgba(10, 169, 244, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
+
+      .create{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../images/image\ 22.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 362px;
+
+        .update{
+          background: linear-gradient(107.42deg, #01063D 20.54%, #003573 58.92%);
+          mix-blend-mode: normal;
+          opacity: 0.8;
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: #FFFFFF;
+          
+          font-family: map-get($font , bod );
+          font-style: normal;
+
+          h2{
+            font-family: map-get($font , tit );
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+          }
+
+          div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            p{
+              width: 607px;
+              height: 56.26px;
+
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 30px;
+            }
+
+            .stay{
+              position: relative;
+              // text-align: left;
+    
+              p{
+                width: 408.71px;
+                height: 43.89px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                text-align: justify;
+              }
+    
+              input{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 15px 5px 15px 20px;
+                gap: 73px;
+                width: 384px;
+                height: 60px;
+                border: 1px solid #C9C9C9;
+                border-radius: 50px;
+    
+                &::placeholder{
+                  font-family: 'Poppins';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: 20px;
+                  color: #A4A4A4;
+                }
+              }
+    
+              button{
+                position: absolute;
+                width: 120px;
+                height: 44px;
+                border: none;
+                border-radius: 50px;
+                background: map-get($colors, sub2);
+                right: 5%;
+              }
+            }
+          }
+        }
+      }
+
+      @include footer();
     }
   }
 }
